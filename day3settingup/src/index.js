@@ -1,8 +1,13 @@
 // // index.js
-import React from 'react'
-import ReactDOM from 'react-dom'
-import Exercise from './exercise'
-// // To get the root element from the HTML document
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+// import Exercise from './exercise'
+// import Day4Component from './Day4Component/functions'
+// import Day5 from './Day5/DayProps'
+// import Des from './Day5/Des';
+import Exer from './Day5/Exer';
+// To get the root element from the HTML document
 // import chefimage from './images/chef1.avif'
 // // JSX element, header
 // const welcome = 'Welcome to 30 Days Of React'
@@ -48,55 +53,84 @@ import Exercise from './exercise'
 //   </p>
 // )
 
-// // JSX element, main
-// const techs = ['HTML', 'CSS', 'JavaScript']
-// const techsFormatted = techs.map((tech) => <li>{tech}</li>)
+// Header Component
+// const Header = () => (
+//   <header>
+//     <div className='header-wrapper'>
+//       <h1>Welcome to 30 Days Of React</h1>
+//       <h2>Getting Started React</h2>
+//       <h3>JavaScript Library</h3>
+//       <p>Asabeneh Yetayeh</p>
+//       <small>Oct 3, 2020</small>
+//     </div>
+//   </header>
+// )
 
-// const user = (
-//   <div>
+// User Card Component
+// const UserCard = () => (
+//   <div className='user-card'>
 //     <img src={chefimage} alt='' />
+//     <h2>Asabeneh Yetayeh</h2>
 //   </div>
 // )
 
-// // JSX element, main
-// const main = (
+// TechList Component
+// const TechList = () => {
+//   const techs = ['HTML', 'CSS', 'JavaScript']
+//   const techsFormatted = techs.map((tech) => <li key={tech}>{tech}</li>)
+//   return techsFormatted
+// }
+
+// // Main Component
+// const Main = () => (
 //   <main>
 //     <div className='main-wrapper'>
-//       <p>
-//         Prerequisite to get started{' '}
-//         <strong>
-//           <em>react.js</em>
-//         </strong>
-//         :
-//       </p>
-//       <ul>{techsFormatted}</ul>
-//       {result}
-//       {personAge}
-//       {user}
+//       <p>Prerequisite to get started react.js:</p>
+//       <ul>
+//         <TechList />
+//       </ul>
+//       <UserCard />
 //     </div>
 //   </main>
 // )
 
-// const copyRight = 'Copyright 2020'
-
-// // JSX element, footer
-// const footer = (
+// Footer Component
+// const Footer = () => (
 //   <footer>
 //     <div className='footer-wrapper'>
-//       <p>{copyRight}</p>
+//       <p>Copyright 2020</p>
 //     </div>
 //   </footer>
 // )
 
 
+// const Header = () => (
+//   <header>
+//     <div className='header-wrapper'>
+//       <h1>Welcome to 30 Days Of React</h1>
+//       <h2>Getting Started React</h2>
+//       <h3>JavaScript Library</h3>
+//       <p>Asabeneh Yetayeh</p>
+//       <small>Oct 3, 2020</small>
+//     </div>
+//   </header>
+// )
 
 // // JSX element, app
-// const app = (
-//   // <div className='app'>
-//    {header}
-//       {footer}
-// )
+const App = (
+  <div className='app'>
+    {/* <Day4Component /> */}
+    {/* <Header />
+    <Main />
+    <Footer /> */}
+    {/* <Day5 /> */}
+    {/* <Des /> */}
+    
+    <Exer />
+  </div>
+    
+)
 
 const rootElement = document.getElementById('root')
 // we render the JSX element using the ReactDOM package
-ReactDOM.render(<Exercise />, rootElement)
+ReactDOM.render( App ,   rootElement)
